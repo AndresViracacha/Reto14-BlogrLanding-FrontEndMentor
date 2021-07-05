@@ -1,0 +1,34 @@
+$lightRed: hsl(13, 100%, 72%);
+$red: hsl(353, 100%, 62%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: url(./images/bg-pattern-intro.svg) no-repeat -440px -1342px,
+    linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
+  height: 600px;
+  border-radius: 0px 0px 0px 96px;
+}
+.header {
+  &-nav {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    margin: 0 auto;
+    padding-top: 60px;
+    max-width: 1112px;
+    &_nav {
+      display: flex;
+      nav ul {
+        display: flex;
+        li {
+          span {
+          }
+        }
+      }
+    }
+  }
+}
