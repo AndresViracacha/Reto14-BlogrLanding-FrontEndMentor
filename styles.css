@@ -21,7 +21,39 @@ header {
 }
 .header-nav_nav {
   display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+.header-nav_nav img {
+  width: min-content;
+  height: min-content;
 }
 .header-nav_nav nav ul {
   display: flex;
+}
+.header-nav_nav nav ul li {
+  margin-left: 30px;
+  list-style: none;
+  position: relative;
+}
+.header-nav_nav nav ul li span {
+  color: white;
+}
+.header-nav_nav nav ul li span::after {
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 6px;
+  background-image: url(./images/icon-arrow-light.svg);
+}
+.header-nav_nav nav ul li ul {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  right: 0px;
+}
+.header-nav_nav nav ul li ul li {
+  margin: 0px;
 }
