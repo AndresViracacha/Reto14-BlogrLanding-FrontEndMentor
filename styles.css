@@ -1,3 +1,5 @@
+/*f
+font-family: 'Ubuntu', sans-serif;*/
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +11,28 @@ header {
   height: 600px;
   border-radius: 0px 0px 0px 96px;
 }
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  margin-top: 125px;
+}
+header p {
+  text-align: center;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 .header-nav {
   position: static;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
   margin: 0 auto;
   padding-top: 60px;
@@ -22,6 +41,7 @@ header {
 .header-nav_nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 480px;
 }
 .header-nav_nav img {
@@ -38,15 +58,18 @@ header {
 }
 .header-nav_nav nav ul li span {
   color: white;
+  font-family: "Ubuntu", sans-serif;
 }
 .header-nav_nav nav ul li span::after {
   display: inline-block;
   content: "";
+  margin-left: 8px;
   width: 9px;
   height: 6px;
   background-image: url(./images/icon-arrow-light.svg);
 }
 .header-nav_nav nav ul li ul {
+  visibility: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -57,3 +80,50 @@ header {
 .header-nav_nav nav ul li ul li {
   margin: 0px;
 }
+.header-nav-buttons {
+  font-family: "Ubuntu", sans-serif;
+  height: 48px;
+}
+.header-nav-buttons a {
+  color: white;
+  margin-right: 28px;
+}
+.header-nav-buttons button {
+  height: 100%;
+  width: 137px;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  color: #ff3d54;
+  font-family: "Ubuntu", sans-serif;
+}
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.header-buttons button {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 8px;
+  width: 137px;
+  height: 48px;
+  border-radius: 100px;
+}
+.header-buttons-active {
+  background-color: white;
+  color: #ff3d54;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+.header-buttons-none {
+  background-color: #ffffff00;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-width: 1px;
+}
+
+/*# sourceMappingURL=styles.css.map */
